@@ -164,6 +164,8 @@ a:focus {
 .header_content p {
    color: #cbc6c0;
    font-family: 'Open Sans', sans-serif;
+   max-width: 590px;
+    margin: 0 auto;
 }
 
 .header_btn {
