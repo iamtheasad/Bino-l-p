@@ -66,14 +66,14 @@ a:focus {
 /************************************** 
       Menu Section Start
 ***************************************/
-.logo img {
-   width: 145px;
+#menu_section {
+   line-height: 36px;
+   padding: 20px 0px;
+   background: green;
 }
 
-.menu ul {
-   list-style: none;
-   line-height: 33px;
-   display: inline-block;
+.logo img {
+   width: 145px;
 }
 
 .menu ul li {
@@ -83,15 +83,19 @@ a:focus {
 .menu ul li a {
    font-size: 14px;
    color: #f4f5f9;
-   padding: 10px;
+   margin-right: 40px;
+   padding-bottom: 15px;
    display: block;
    font-family: 'Open Sans', sans-serif;
    text-transform: uppercase;
    font-weight: 700;
+   border-bottom: 1px solid transparent;
+   letter-spacing: 1px;
 }
 
 .menu ul li a:hover {
    color: #e74c3c;
+   border-bottom: 1px solid #e74c3c;
 }
 
 /************************************** 
