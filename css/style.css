@@ -93,6 +93,10 @@ a:focus {
    letter-spacing: 1px;
 }
 
+.menu ul li:last-child a {
+   margin-right: 0px;
+}
+
 .menu ul li a:hover {
    color: #e74c3c;
    border-bottom: 1px solid #e74c3c;
