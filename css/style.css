@@ -1,0 +1,99 @@
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   color: #999999;
+   font-size: 14px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Source Sans Pro', sans-serif;
+   margin: 0;
+   padding: 0;
+   color: #6a6a6a;
+   font-weight: 700;
+}
+
+p {
+   color: #999999;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 300;
+}
+
+ul,
+p {
+   margin: 0px;
+   padding: 0px;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+.margin_padding_0 {
+   margin: 0px;
+   padding: 0px;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+   outline: none;
+}
+
+::placeholder {
+   color: #999999;
+   font-weight: 500;
+}
+
+a:hover,
+a:focus {
+   text-decoration: none;
+}
+
+/************************************** 
+      Menu Section Start
+***************************************/
+.logo img {
+   width: 145px;
+}
+
+.menu ul {
+   list-style: none;
+   line-height: 33px;
+   display: inline-block;
+}
+
+.menu ul li {
+   display: inline-block;
+}
+
+.menu ul li a {
+   font-size: 14px;
+   color: #f4f5f9;
+   padding: 10px;
+   display: block;
+   font-family: 'Open Sans', sans-serif;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.menu ul li a:hover {
+   color: #e74c3c;
+}
+
+/************************************** 
+      Menu Section End
+***************************************/
