@@ -123,20 +123,36 @@ a:focus {
    margin: 0 auto;
 }
 
-.header_slider {
-   position: relative;
+.header_bg_1 {
+   background-image: url(../images/header_slider_bg_1.jpg);
 }
 
-.header_bg_1 {
-   background-image: url(../images/header_bg.jpg);
+.header_bg_2 {
+   background-image: url(../images/header_slider_bg_2.jpg);
+}
+
+.header_bg_3 {
+   background-image: url(../images/header_slider_bg_3.jpg);
+}
+
+.header_bg_4 {
+   background-image: url(../images/header_slider_bg_4.jpg);
+}
+
+.header_bg_5 {
+   background-image: url(../images/header_slider_bg_5.jpg);
+}
+
+.single_slide_item {
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
    position: relative;
    z-index: 1;
+   background-color: #e74c3c;
 }
 
-.header_bg_1:before {
+.single_slide_item:before {
    position: absolute;
    content: '';
    background: #000000;
@@ -153,7 +169,7 @@ a:focus {
    position: absolute;
    background: #fff;
    width: 51%;
-   height: 145px;
+   height: 170px;
    top: 90%;
    -webkit-transform: skew(0deg, 7deg);
    -ms-transform: skew(0deg, 7deg);
@@ -168,7 +184,7 @@ a:focus {
    position: absolute;
    background: #fff;
    width: 51%;
-   height: 145px;
+   height: 170px;
    left: 49%;
    top: 90%;
    -webkit-transform: skew(0deg, -7deg);
@@ -203,7 +219,7 @@ a:focus {
    justify-content: center;
 }
 
-.header_bottom_icon span {
+.header_bottom_icon a {
    position: absolute;
    z-index: 2;
    left: 50%;
@@ -329,6 +345,44 @@ a:focus {
    -webkit-transform: translateX(-50%);
    -ms-transform: translateX(-50%);
    transform: translateX(-50%);
+}
+
+.header_slider button.slick-arrow {
+   z-index: 2;
+   font-size: 20px;
+   color: #453e39;
+   background: #6f6863;
+   border: none;
+   width: 45px;
+   height: 45px;
+   border-radius: 5px;
+   -webkit-transition: .2s;
+   -o-transition: .2s;
+   transition: .2s;
+}
+
+.header_slider button.slick-arrow:focus {
+   color: #fff;
+   background: #E74C3C;
+}
+
+.header_slider button.slick-arrow:hover {
+   color: #fff;
+   background: #E74C3C;
+}
+
+.header_slider button.slick-prev.slick-arrow {
+   position: absolute;
+   top: 50%;
+   left: 3%;
+   transform: translateY(-50%);
+}
+
+.header_slider button.slick-next.slick-arrow {
+   position: absolute;
+   right: 3%;
+   top: 50%;
+   transform: translateY(-50%);
 }
 
 /************************************** 
