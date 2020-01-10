@@ -433,7 +433,7 @@ a:focus {
 
 .testimonial_icon:before {
    content: '';
-   border: 1px solid #f6f6f6;
+   border: 2px solid #f6f6f6;
    -webkit-border-radius: 5px;
    border-radius: 5px;
    position: absolute;
