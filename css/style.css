@@ -520,6 +520,7 @@ a:focus {
 
 .testimonial_area.slick-initialized .slick-slide {
    outline: none;
+   padding: 20px 0px;
 }
 
 /************************************** 
