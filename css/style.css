@@ -512,6 +512,11 @@ a:focus {
    letter-spacing: .5px;
 }
 
+.testimonial_border_bottom {
+   background: #f7f7f8;
+   width: 100%;
+   height: 2px;
+}
 /************************************** 
     Tstimonial Section End
 ***************************************/
