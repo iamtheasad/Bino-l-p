@@ -1,3 +1,4 @@
+// Header Slider
 $(document).ready(function(){
    $('.header_slider').slick({
       infinite: true,
@@ -12,3 +13,15 @@ $(document).ready(function(){
       fade: true,
    });
  });
+
+//  Testimonial Slider
+$(document).ready(function(){
+   $('.testimonial_area').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+   });
+});
