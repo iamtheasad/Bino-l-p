@@ -625,9 +625,19 @@ a.history_btn:hover {
    background: #f4f5f9;
    width: 64px;
    height: 64px;
+   -webkit-border-radius: 50%;
    border-radius: 50%;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
    justify-content: center;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
    align-items: center;
    color: #f5b4ae;
    top: 37%;
@@ -655,6 +665,7 @@ a.history_btn:hover {
    width: 72px;
    height: 72px;
    z-index: -1;
+   -webkit-border-radius: 50%;
    border-radius: 50%;
    opacity: .3;
    left: -7%;
@@ -672,8 +683,17 @@ a.history_btn:hover {
 }
 
 .service_content {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-pack: end;
+   -webkit-justify-content: flex-end;
+   -ms-flex-pack: end;
    justify-content: flex-end;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
    align-items: center;
    height: 765px;
    text-align: right;
@@ -701,6 +721,8 @@ a.history_btn:hover {
    width: 36px;
    height: 7px;
    background: #e74c3c;
+   -webkit-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
    transform: rotate(90deg);
    top: 50%;
 }
