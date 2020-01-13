@@ -143,23 +143,23 @@ a:focus {
 }
 
 .header_bg_1 {
-   background-image: url(../images/header_slider_bg_1.jpg);
+   background-image: url(../images/slider/header_slider_bg_1.jpg);
 }
 
 .header_bg_2 {
-   background-image: url(../images/header_slider_bg_2.jpg);
+   background-image: url(../images/slider/header_slider_bg_2.jpg);
 }
 
 .header_bg_3 {
-   background-image: url(../images/header_slider_bg_3.jpg);
+   background-image: url(../images/slider/header_slider_bg_3.jpg);
 }
 
 .header_bg_4 {
-   background-image: url(../images/header_slider_bg_4.jpg);
+   background-image: url(../images/slider/header_slider_bg_4.jpg);
 }
 
 .header_bg_5 {
-   background-image: url(../images/header_slider_bg_5.jpg);
+   background-image: url(../images/slider/header_slider_bg_5.jpg);
 }
 
 .single_slide_item {
@@ -202,7 +202,7 @@ a:focus {
    content: '';
    position: absolute;
    background: #fff;
-   width: 51%;
+   width: 52%;
    height: 170px;
    left: 49%;
    top: 90%;
@@ -584,4 +584,141 @@ a.history_btn:hover {
 
 /************************************** 
      History Section End
+***************************************/
+
+
+/************************************** 
+     Our Services Section Start
+***************************************/
+.services {
+   height: 765px;
+   background-color: #202020;
+   z-index: 1;
+   position: relative;
+}
+
+.services:after {
+   background-image: url(../images/our_services_bg.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 765px;
+   position: absolute;
+   z-index: -2;
+   content: '';
+   width: 50%;
+   top: 0%;
+   left: 50%;
+}
+
+.service_bg {
+   background-image: url(../images/services/our_services_bg.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 765px;
+   position: relative;
+   z-index: 1;
+}
+
+.service_icon_1 a,
+.service_icon_2 a,
+.service_icon_3 a {
+   background: #f4f5f9;
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #f5b4ae;
+   top: 37%;
+   position: absolute;
+   left: -5%;
+   font-size: 27px;
+}
+
+.service_icon_2 a {
+   top: 55%;
+   left: -5%;
+}
+
+.service_icon_3 a {
+   top: 73%;
+   left: -5%;
+}
+
+.service_icon_1 a:after,
+.service_icon_2 a:after,
+.service_icon_3 a:after {
+   content: '';
+   position: absolute;
+   background: #fff;
+   width: 72px;
+   height: 72px;
+   z-index: -1;
+   border-radius: 50%;
+   opacity: .3;
+   left: -7%;
+   top: -7%;
+}
+
+.service_icon_2 a:after {
+   left: -7%;
+   top: -6%;
+}
+
+.service_icon_3 a:after {
+   left: -7%;
+   top: -7%;
+}
+
+.service_content {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 765px;
+   text-align: right;
+   padding-right: 58px;
+}
+
+.service_text {
+   margin-bottom: 70px;
+}
+
+.service_text:last-child {
+   margin-bottom: 0px;
+}
+
+.service_text h2 {
+   font-size: 36px;
+   color: #f4f5f9;
+   text-transform: uppercase;
+   position: relative;
+}
+
+.service_text h2:after {
+   position: absolute;
+   content: '';
+   width: 36px;
+   height: 7px;
+   background: #e74c3c;
+   transform: rotate(90deg);
+   top: 50%;
+}
+
+.service_text h4 {
+   font-size: 18px;
+   text-transform: uppercase;
+   color: #e74c3c;
+   font-weight: 600;
+   margin-top: 65px;
+   margin-bottom: 10px;
+}
+
+.service_text p {
+   line-height: 1.8;
+   font-weight: 500;
+}
+
+/************************************** 
+     Our Services Section End
 ***************************************/
