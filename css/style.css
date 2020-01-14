@@ -598,7 +598,7 @@ a.history_btn:hover {
 }
 
 .services:after {
-   background-image: url(../images/our_services_bg.jpg);
+   background-image: url(../images/services/our_services_bg.jpg);
    background-position: center;
    background-size: cover;
    height: 765px;
@@ -608,15 +608,6 @@ a.history_btn:hover {
    width: 50%;
    top: 0%;
    left: 50%;
-}
-
-.service_bg {
-   background-image: url(../images/services/our_services_bg.jpg);
-   background-position: center;
-   background-size: cover;
-   height: 765px;
-   position: relative;
-   z-index: 1;
 }
 
 .service_icon_1 a,
@@ -639,15 +630,14 @@ a.history_btn:hover {
    -webkit-align-items: center;
    -ms-flex-align: center;
    align-items: center;
-   color: #f5b4ae;
-   top: 37%;
+   top: 33%;
    position: absolute;
    left: -5%;
    font-size: 27px;
 }
 
 .service_icon_2 a {
-   top: 55%;
+   top: 53%;
    left: -5%;
 }
 
@@ -668,17 +658,17 @@ a.history_btn:hover {
    -webkit-border-radius: 50%;
    border-radius: 50%;
    opacity: .3;
-   left: -7%;
+   left: -6%;
    top: -7%;
 }
 
 .service_icon_2 a:after {
-   left: -7%;
-   top: -6%;
+   left: -6%;
+   top: -7%;
 }
 
 .service_icon_3 a:after {
-   left: -7%;
+   left: -6%;
    top: -7%;
 }
 
@@ -698,6 +688,30 @@ a.history_btn:hover {
    height: 765px;
    text-align: right;
    padding-right: 58px;
+   width: 640px;
+   margin-left: auto;
+   position: relative;
+}
+
+.service_bar {
+   position: absolute;
+   width: 34px;
+   height: 1px;
+   background-color: #2a2a2a;
+   left: 0%;
+   transform: rotate(90deg);
+}
+
+.service_bar_1 {
+   top: 45%;
+}
+
+.service_bar_2 {
+   top: 52%;
+}
+
+.service_bar_3 {
+   top: 59%;
 }
 
 .service_text {
