@@ -630,19 +630,19 @@ a.history_btn:hover {
    -webkit-align-items: center;
    -ms-flex-align: center;
    align-items: center;
-   top: 33%;
+   top: 28%;
    position: absolute;
    left: -5%;
    font-size: 27px;
 }
 
 .service_icon_2 a {
-   top: 53%;
+   top: 48%;
    left: -5%;
 }
 
 .service_icon_3 a {
-   top: 73%;
+   top: 68%;
    left: -5%;
 }
 
@@ -688,8 +688,6 @@ a.history_btn:hover {
    height: 765px;
    text-align: right;
    padding-right: 58px;
-   width: 640px;
-   margin-left: auto;
    position: relative;
 }
 
@@ -699,7 +697,10 @@ a.history_btn:hover {
    height: 1px;
    background-color: #2a2a2a;
    left: 0%;
+   -webkit-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
    transform: rotate(90deg);
+   z-index: 5;
 }
 
 .service_bar_1 {
@@ -716,24 +717,29 @@ a.history_btn:hover {
 
 .service_text {
    margin-bottom: 70px;
+   max-width: 670px;
 }
 
 .service_text:last-child {
    margin-bottom: 0px;
 }
 
-.service_text h2 {
+.service_content_tablecell {
+   margin-left: 30px;
+}
+
+.service_content_tablecell h2 {
    font-size: 36px;
    color: #f4f5f9;
    text-transform: uppercase;
    position: relative;
 }
 
-.service_text h2:after {
+.service_content_tablecell h2:after {
    position: absolute;
    content: '';
    width: 36px;
-   height: 7px;
+   height: 6px;
    background: #e74c3c;
    -webkit-transform: rotate(90deg);
    -ms-transform: rotate(90deg);
