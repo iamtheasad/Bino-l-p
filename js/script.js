@@ -68,3 +68,24 @@ $(document).ready(function () {
    });
 
 });
+
+// Recent Works Isotope
+jQuery(docuemnt).ready(function () {
+  var  $grid = $('.iso_recent_work').isotope({
+      itemSelector: '.recent_work_box',
+      percentPosition: true,
+      masonry: {
+         // use outer width of grid-sizer for columnWidth
+         columnWidth: 1
+      }
+   });
+
+   // filter items on button click
+   $('.recent_work_menu').on('click', 'button', function () {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({
+         filter: filterValue
+      });
+   });
+
+});

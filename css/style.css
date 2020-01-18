@@ -747,6 +747,7 @@ a.history_btn:hover {
    height: 6px;
    background: #e74c3c;
    -webkit-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
    -ms-transform: rotate(90deg);
    transform: rotate(90deg);
    top: 50%;
@@ -769,3 +770,184 @@ a.history_btn:hover {
 /************************************** 
      Our Services Section End
 ***************************************/
+
+
+/************************************** 
+     Our Recent Works Start
+***************************************/
+.height_140 {
+   padding-top: 140px;
+}
+
+/* .recent_work_bg_1 {
+   background-image: url(../images/recent-works/recent_work_bg_1.jpg);
+} */
+/* 
+.recent_work_bg_2 {
+   background-image: url(../images/recent-works/recent_work_bg_2.jpg);
+}
+
+.recent_work_bg_3 {
+   background-image: url(../images/recent-works/recent_work_bg_3.jpg);
+}
+
+.recent_work_bg_4 {
+   background-image: url(../images/recent-works/recent_work_bg_4.jpg);
+}
+
+.recent_work_bg_5 {
+   background-image: url(../images/recent-works/recent_work_bg_5.jpg);
+}
+
+.recent_work_bg_6 {
+   background-image: url(../images/recent-works/recent_work_bg_6.jpg);
+}
+
+.recent_work_bg_7 {
+   background-image: url(../images/recent-works/recent_work_bg_7.jpg);
+}
+
+.recent_work_bg_8 {
+   background-image: url(../images/recent-works/recent_work_bg_8.jpg);
+} */
+
+/* .recent_work_sample {
+   background-repeat: no-repeat;
+   height: 480px;
+   z-index: 1;
+   background-position: center;
+} */
+
+.recent_work_box:hover .recent_work_sample::after{
+   opacity: 1;
+   left: 0%;
+}
+
+.recent_work_sample::after {
+   content: '';
+   position: absolute;
+   background-color: rgba(231, 76, 60, .8);
+   top: 0;
+   left: 90%;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   -webkit-transition: .3s;
+   -moz-transition: .3s;
+   -o-transition: .3s;
+   transition: .3s;
+}
+
+.recent_work_top h2 {
+   font-size: 36px;
+}
+
+.recent_work_top p {
+   font-family: 'Open Sans', sans-serif;
+   margin: 30px 0px;
+}
+
+.header_bars.recent_work_bar {
+   height: 70px;
+}
+
+.recent_work_bar .header_bar_1 {
+   left: 42%;
+   background-color: #dddddd;
+}
+
+.recent_work_bar .header_bar_3 {
+   left: 58%;
+   background-color: #dddddd;
+}
+
+/* Recent Works Menu Start */
+.recent_work_menu {
+   margin-bottom: 50px;
+}
+
+.recent_work_menu ul li {
+   list-style: none;
+   display: inline-block;
+}
+
+.recent_work_menu ul li a,
+.recent_work_menu ul li span {
+   color: #999999;
+   text-transform: uppercase;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 700;
+   -webkit-transition: .2s;
+   -o-transition: .2s;
+   -moz-transition: .2s;
+   transition: .2s;
+   padding: 8px;
+}
+
+.recent_work_menu ul li:hover a {
+   color: #e74c3c;
+}
+/* Recent Works Menu End */
+
+/* Recent Work Image Start */
+.recent_works {
+   text-align: center;
+}
+
+.recent_work_box {
+   width: 25%;
+   float: left;
+   position: relative;
+   overflow: hidden;
+}
+
+.recent_work_box:hover .recent_workd_sample_text {
+   opacity: 1;
+   bottom: 50px;
+   left:45px;
+}
+
+.recent_workd_sample_text {
+   position: absolute;
+   z-index: 2;
+   bottom: 50px;
+   left: -5%;
+   text-align: left;
+   opacity: 0;
+   transition: .4s;
+   -webkit-transition: .4s;
+   -moz-transition: .4s;
+   -o-transition: .4s;
+}
+
+.recent_workd_sample_text::before {
+   content: '';
+   background-color: #fff;
+   width: 44px;
+   height: 4px;
+   top: -28px;
+   left: 0%;
+   position: absolute;
+}
+
+.recent_workd_sample_text h4 {
+   font-weight: 600;
+   font-size: 24px;
+   text-transform: uppercase;
+   color: #fff;
+   letter-spacing: 1px;
+   padding-bottom: 7px;
+}
+
+.recent_workd_sample_text p {
+   color: #fff;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 500;
+   letter-spacing: 1px;
+}
+/* Recent Works Image  End */
+
+/************************************** 
+     Our Recent Works End
+***************************************/
+
