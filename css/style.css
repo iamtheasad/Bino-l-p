@@ -813,12 +813,12 @@ a.history_btn:hover {
 }
 
 .recent_work_bar .header_bar_1 {
-   left: 42%;
+   left: 40%;
    background-color: #dddddd;
 }
 
 .recent_work_bar .header_bar_3 {
-   left: 58%;
+   left: 60%;
    background-color: #dddddd;
 }
 
@@ -913,4 +913,155 @@ a.history_btn:hover {
 
 /************************************** 
      Our Recent Works End
+***************************************/
+
+
+/************************************** 
+     Case Study Start
+***************************************/
+.height_150 {
+   padding: 150px 0px;
+   background-color: #F4F5F9;
+}
+
+.case_study_bg {
+   position: relative;
+}
+
+.case_study_bg {
+   background-image: url(../images/case_study_bg.jpg);
+   height: 722px;
+   position: absolute;
+   content: '';
+   width: 100%;
+   top: 0%;
+   left: -15%;
+}
+
+.recent_work_slider {
+   z-index: 1;
+}
+
+.case_study_content.slick-slide {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+}
+
+.case_study_content {
+   height: 722px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+   z-index: 1;
+   position: relative;
+}
+
+.case_sutyd_tablecell {
+   background: #fff;
+   width: 665px;
+   height: 630px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.case_study_text {
+   padding: 80px 60px 50px 60px;
+}
+
+.case_study_text span {
+   width: 127px;
+   height: 127px;
+   background: #E74C3C;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+   text-align: center;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+   margin: 0px auto;
+   -webkit-transition: .2s;
+   -o-transition: .2s;
+   transition: .2s;
+}
+
+.case_study_text span:hover {
+   background: #d63e2e;
+}
+
+.case_study_text span img {
+   -webkit-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+}
+
+.case_study_text h4 {
+   font-size: 18px;
+   text-transform: uppercase;
+   margin-top: 70px;
+   margin-bottom: 30px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.header_bars.case_study_bar {
+   height: 30px;
+}
+
+.case_study_bar .header_bar_1 {
+   width: 41px;
+   height: 2px;
+   color: #cdcdcd;
+   left: 50%;
+   -webkit-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
+
+.case_study_text p {
+   font-weight: 500;
+   letter-spacing: .5px;
+}
+
+a.case_study_btn {
+   padding: 17px 38px;
+   background: #E74C3C;
+   display: inline-block;
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #fff;
+   font-weight: 700;
+   letter-spacing: .5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   margin: 50px 0px;
+}
+
+a.case_study_btn:hover {
+   background: #d63e2e;
+}
+
+/************************************** 
+     Case Study End
 ***************************************/

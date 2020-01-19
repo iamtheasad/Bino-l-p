@@ -93,6 +93,19 @@ jQuery(document).ready(function () {
       $(this).addClass('recent_work_active').siblings('.recent_work_active').removeClass('recent_work_active');
       e.preventDefault();
    });
+});
 
 
+// Recent-Works Slider
+jQuery(document).ready(function () {
+   $(".recent_work_slider").slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      fade: true,
+   });
 });
