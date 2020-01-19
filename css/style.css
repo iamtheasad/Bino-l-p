@@ -779,46 +779,7 @@ a.history_btn:hover {
    padding-top: 140px;
 }
 
-/* .recent_work_bg_1 {
-   background-image: url(../images/recent-works/recent_work_bg_1.jpg);
-} */
-/* 
-.recent_work_bg_2 {
-   background-image: url(../images/recent-works/recent_work_bg_2.jpg);
-}
-
-.recent_work_bg_3 {
-   background-image: url(../images/recent-works/recent_work_bg_3.jpg);
-}
-
-.recent_work_bg_4 {
-   background-image: url(../images/recent-works/recent_work_bg_4.jpg);
-}
-
-.recent_work_bg_5 {
-   background-image: url(../images/recent-works/recent_work_bg_5.jpg);
-}
-
-.recent_work_bg_6 {
-   background-image: url(../images/recent-works/recent_work_bg_6.jpg);
-}
-
-.recent_work_bg_7 {
-   background-image: url(../images/recent-works/recent_work_bg_7.jpg);
-}
-
-.recent_work_bg_8 {
-   background-image: url(../images/recent-works/recent_work_bg_8.jpg);
-} */
-
-/* .recent_work_sample {
-   background-repeat: no-repeat;
-   height: 480px;
-   z-index: 1;
-   background-position: center;
-} */
-
-.recent_work_box:hover .recent_work_sample::after{
+.recent_work_box:hover .recent_work_sample::after {
    opacity: 1;
    left: 0%;
 }
@@ -866,27 +827,29 @@ a.history_btn:hover {
    margin-bottom: 50px;
 }
 
-.recent_work_menu ul li {
-   list-style: none;
-   display: inline-block;
-}
-
-.recent_work_menu ul li a,
-.recent_work_menu ul li span {
-   color: #999999;
+.recent_work_menu button,
+.recent_work_menu span {
+   background: none;
+   border: none;
+   font-size: 16px;
    text-transform: uppercase;
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 700;
+   font-weight: 600;
+   padding: 5px;
+   color: #999999;
    -webkit-transition: .2s;
-   -o-transition: .2s;
    -moz-transition: .2s;
+   -o-transition: .2s;
    transition: .2s;
-   padding: 8px;
 }
 
-.recent_work_menu ul li:hover a {
+.recent_work_menu button:hover {
    color: #e74c3c;
 }
+
+.recent_work_menu .recent_work_active {
+   color: #e74c3c;
+}
+
 /* Recent Works Menu End */
 
 /* Recent Work Image Start */
@@ -904,7 +867,7 @@ a.history_btn:hover {
 .recent_work_box:hover .recent_workd_sample_text {
    opacity: 1;
    bottom: 50px;
-   left:45px;
+   left: 45px;
 }
 
 .recent_workd_sample_text {
@@ -945,9 +908,9 @@ a.history_btn:hover {
    font-weight: 500;
    letter-spacing: 1px;
 }
+
 /* Recent Works Image  End */
 
 /************************************** 
      Our Recent Works End
 ***************************************/
-

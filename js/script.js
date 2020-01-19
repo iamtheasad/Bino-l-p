@@ -70,8 +70,8 @@ $(document).ready(function () {
 });
 
 // Recent Works Isotope
-jQuery(docuemnt).ready(function () {
-  var  $grid = $('.iso_recent_work').isotope({
+jQuery(document).ready(function () {
+   var $grid = $('.iso_recent_work').isotope({
       itemSelector: '.recent_work_box',
       percentPosition: true,
       masonry: {
@@ -87,5 +87,12 @@ jQuery(docuemnt).ready(function () {
          filter: filterValue
       });
    });
+
+   // Active Class For Isotope Menu
+   $('.recent_work_menu button').on('click', function (e) {
+      $(this).addClass('recent_work_active').siblings('.recent_work_active').removeClass('recent_work_active');
+      e.preventDefault();
+   });
+
 
 });
