@@ -119,3 +119,37 @@ jQuery(document).ready(function () {
       'delay': 100,
    });
 });
+
+
+// Pricing Card Slider Wiht Slick Carousel
+jQuery(document).ready(function () {
+   $(".pricing_card_slider").slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      arrows: false,
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+               slidesToShow: 3,
+            }
+         },
+         {
+            breakpoint: 767,
+            settings: {
+               slidesToShow: 1,
+            }
+         },
+         {
+            breakpoint: 480,
+            settings: {
+               slidesToShow: 1,
+            }
+         }
+      ]
+   });
+});

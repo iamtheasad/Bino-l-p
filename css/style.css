@@ -1182,6 +1182,10 @@ a.pricing_btn,
    transition: .3s;
 }
 
+.pricing_card_slider.slick-initialized.slick-slider .slick-slide:focus {
+   outline: none;
+}
+
 .pricing_card_header {
    background-color: #999999;
    height: 205px;
@@ -1251,14 +1255,19 @@ a.pricing_btn,
    padding-top: 125px;
 }
 
-.pricng_body p {
+.pricng_body a {
    font-weight: 600;
    letter-spacing: .5px;
    font-family: 'Open Sans', sans-serif;
+   color: #999999;
+   margin-top: 20px;
+   display: inline-block;
 }
 
 a.pricing_btn {
    background-color: #999999;
+   color: #fff;
+   margin-top: 50px;
 }
 
 /************************************** 
