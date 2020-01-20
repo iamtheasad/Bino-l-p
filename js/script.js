@@ -109,3 +109,13 @@ jQuery(document).ready(function () {
       fade: true,
    });
 });
+
+
+// Statistics Counterup
+// Source - https://www.jqueryscript.net/other/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js.html
+jQuery(document).ready(function () {
+   $(".statistics_countup").countUp({
+      'time': 3000,
+      'delay': 100,
+   });
+});
