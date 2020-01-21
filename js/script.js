@@ -28,7 +28,6 @@ $(document).ready(function () {
 
 // Services Section Hover Effect
 $(document).ready(function () {
-
    $(".service_icon_1, .service_text_1").hover(function () {
       $(".service_bar_1").css({
          "background-color": "#e74c3c",
@@ -153,3 +152,5 @@ jQuery(document).ready(function () {
       ]
    });
 });
+
+
