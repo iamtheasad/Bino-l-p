@@ -128,7 +128,7 @@ jQuery(document).ready(function () {
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       arrows: false,
       responsive: [

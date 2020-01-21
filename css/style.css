@@ -801,6 +801,7 @@ a.history_btn:hover {
 .recent_work_top p {
    font-family: 'Open Sans', sans-serif;
    margin: 30px 0px;
+   font-weight: 500;
 }
 
 .header_bars.recent_work_bar {
@@ -1069,15 +1070,15 @@ a.case_study_btn:hover {
 .defualt_padding {
    padding-top: 155px;
    padding-bottom: 143px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: 1;
+   position: relative;
 }
 
 .statistics_bg {
    background-image: url(../images/statistics_bg.jpg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   position: relative;
-   z-index: 1;
    background-color: #999999;
 }
 
@@ -1171,6 +1172,15 @@ a.case_study_btn:hover {
 }
 
 .pricing_card:hover .price h4 {
+   color: #E74C3C;
+}
+
+.card_2 .pricing_card_header,
+.card_2 a.pricing_btn {
+   background-color: #E74C3C;
+}
+
+.card_2 .price h4 {
    color: #E74C3C;
 }
 
@@ -1272,4 +1282,126 @@ a.pricing_btn {
 
 /************************************** 
      Our Pricing Section End
+***************************************/
+
+
+/************************************** 
+     Our Team Section Start
+***************************************/
+.our_team_bg {
+   background-image: url(../images/team/teame_bg.jpg);
+   overflow: hidden;
+   height: 744px;
+}
+
+.our_team_bg:after {
+   content: '';
+   position: absolute;
+   background-color: #202020;
+   width: 100%;
+   height: 100%;
+   top: 0%;
+   left: 0%;
+   opacity: .75;
+   z-index: -1;
+}
+
+.our_team_top h2,
+.our_team_top p {
+   color: #fff;
+}
+
+.our_team_transparent_bg {
+   background-image: url(../images/team/team_transparent_bg.png);
+   position: absolute;
+   bottom: -7%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.team_list img {
+   border-radius: 50%;
+   border: 4px solid #e74c3c;
+   z-index: 1;
+}
+
+.team_list {
+   max-width: 1170px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.team_list span:nth-child(1) {
+   position: absolute;
+   top: 57%;
+   left: 12%;
+}
+
+.team_list span:nth-child(2) {
+   position: absolute;
+   top: 51%;
+   right: 64%;
+}
+
+.team_list span:nth-child(2) h4:after {
+   top: 52%;
+}
+
+.team_list span:nth-child(3) {
+   position: absolute;
+   top: 52%;
+   left: 48%;
+}
+
+.team_list span:nth-child(4) {
+   position: absolute;
+   top: 57%;
+   left: 65%;
+}
+
+.team_list span:nth-child(5) {
+   position: absolute;
+   top: 53%;
+   right: 7%;
+}
+
+.team_list h4:after {
+   position: absolute;
+   background: #675b5b;
+   width: 50px;
+   height: 1px;
+   display: block;
+   content: '';
+   transform: rotate(90deg);
+   top: 44%;
+   left: 28%;
+}
+
+.team_list h4 {
+   font-size: 24px;
+   margin-top: 80px;
+   color: #e74c3c;
+   font-weight: 600;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.team_list p {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 500;
+}
+
+.team_list h4, .team_list p {
+   visibility: hidden;
+}
+
+.team_list img:hover .team_list h4,
+.team_list img:hover .team_list p {
+   visibility: visible;
+}
+
+/************************************** 
+     Our Team Section End
 ***************************************/
