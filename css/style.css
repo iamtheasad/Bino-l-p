@@ -1393,14 +1393,25 @@ a.pricing_btn {
    font-weight: 500;
 }
 
-.team_list h4, .team_list p {
-   visibility: hidden;
+/* .team_list h4, 
+.team_list p {
+   opacity: 0;
+   transition: .2s;
 }
 
-.team_list img:hover .team_list h4,
-.team_list img:hover .team_list p {
-   visibility: visible;
-}
+.team_list img:hover + h4,
+.team_list img:hover  p {
+   opacity: 1;
+} */
+
+
+.team_list img:hover {
+   opacity: 0.5;  
+ }
+ .team_list img:hover + h4,
+ .team_list img:hover + p {
+    visibility: visible;
+ }
 
 /************************************** 
      Our Team Section End
