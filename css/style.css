@@ -573,8 +573,8 @@ a.history_btn {
    color: #fff;
    -webkit-border-radius: 5px;
    border-radius: 5px;
-   -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.37);
-   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.37);
+   -webkit-box-shadow: 0px 2px 3px 0px #999999;
+   box-shadow: 0px 2px 3px 0px #999999;
 }
 
 a.history_btn:hover {
@@ -629,19 +629,19 @@ a.history_btn:hover {
    -webkit-align-items: center;
    -ms-flex-align: center;
    align-items: center;
-   top: 28%;
+   top: 33%;
    position: absolute;
    left: -5%;
    font-size: 27px;
 }
 
 .service_icon_2 a {
-   top: 48%;
+   top: 53%;
    left: -5%;
 }
 
 .service_icon_3 a {
-   top: 68%;
+   top: 73%;
    left: -5%;
 }
 
@@ -1325,7 +1325,7 @@ a.pricing_btn {
 .team_img {
    position: relative;
    width: 51px;
-   height: 50px;
+   height: 51px;
    margin: 0 auto;
 }
 
@@ -1380,16 +1380,32 @@ a.pricing_btn {
    left: 48%;
 }
 
+.team_list span:nth-child(3) h4:after {
+   left: 31%;
+}
+
 .team_list span:nth-child(4) {
    position: absolute;
    top: 58%;
    left: 65%;
 }
 
+.team_list span:nth-child(4) h4:after {
+   left: 33%;
+}
+
 .team_list span:nth-child(5) {
    position: absolute;
    top: 53%;
    right: 7%;
+}
+
+.team_list h4 {
+   font-size: 24px;
+   margin-top: 80px;
+   color: #e74c3c;
+   font-weight: 600;
+   font-family: 'Open Sans', sans-serif;
 }
 
 .team_list h4:after {
@@ -1403,15 +1419,7 @@ a.pricing_btn {
    -ms-transform: rotate(90deg);
    transform: rotate(90deg);
    top: 41%;
-   left: 28%;
-}
-
-.team_list h4 {
-   font-size: 24px;
-   margin-top: 80px;
-   color: #e74c3c;
-   font-weight: 600;
-   font-family: 'Open Sans', sans-serif;
+   left: 29%;
 }
 
 .team_list p {
