@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
 * {
    margin: 0px;
    padding: 0px;
@@ -86,7 +89,7 @@ a:focus {
 /************************************** 
       Menu Section Start
 ***************************************/
-#menu_section {
+.menu_section {
    line-height: 36px;
    padding: 20px 0px;
    position: absolute;
@@ -137,7 +140,7 @@ a:focus {
 /************************************** 
      Header Section Start
 ***************************************/
-#custom_width {
+.custom_width {
    max-width: 1920px;
    margin: 0 auto;
 }
@@ -1353,48 +1356,48 @@ a.pricing_btn {
    text-align: center;
 }
 
-.team_list span:nth-child(1) {
+.team_list .team_content:nth-child(1) {
    position: absolute;
    top: 57%;
    left: 12%;
 }
 
-.team_list span:nth-child(2) {
+.team_list .team_content:nth-child(2) {
    position: absolute;
    top: 51%;
    right: 64%;
 }
 
-.team_list span:nth-child(2) .team_img {
+.team_list .team_content:nth-child(2) .team_img {
    width: 79px;
    height: 77px;
 }
 
-.team_list span:nth-child(2) h4:after {
+.team_list .team_content:nth-child(2) h4:after {
    top: 49%;
 }
 
-.team_list span:nth-child(3) {
+.team_list .team_content:nth-child(3) {
    position: absolute;
    top: 53%;
    left: 48%;
 }
 
-.team_list span:nth-child(3) h4:after {
+.team_list .team_content:nth-child(3) h4:after {
    left: 31%;
 }
 
-.team_list span:nth-child(4) {
+.team_list .team_content:nth-child(4) {
    position: absolute;
    top: 58%;
    left: 65%;
 }
 
-.team_list span:nth-child(4) h4:after {
+.team_list .team_content:nth-child(4) h4:after {
    left: 33%;
 }
 
-.team_list span:nth-child(5) {
+.team_list .team_content:nth-child(5) {
    position: absolute;
    top: 53%;
    right: 7%;
