@@ -1524,3 +1524,97 @@ a.pricing_btn {
 /************************************** 
      Integratin Section End
 ***************************************/
+
+
+/************************************** 
+     Blog Section Start
+***************************************/
+.blog {
+   padding-top: 120px;
+   background-color: #F4F5F9;
+}
+
+.blog_list {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+}
+
+.blog_item {
+   width: 25%;
+}
+
+.blog_item.blog_item_text {
+   background-color: #E74E3E;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-right: 20px;
+   padding-left: 30px;
+}
+
+.blog_item_text {
+   position: relative;
+}
+
+.blog_item_text:after {
+   position: absolute;
+   content: '';
+   background: #e74e3e;
+   width: 30px;
+   height: 30px;
+   top: 50%;
+   margin-top: -20px;
+   left: -3%;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+.blog_list:last-child .blog_item_text:after {
+   left: 95%;
+}
+
+.blog_item h6 {
+   color: #fff;
+   font-weight: 300;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+}
+
+.blog_item h4 {
+   font-size: 24px;
+   color: #fff;
+   font-weight: 600;
+   padding-top: 10px;
+   padding-bottom: 14px;
+   position: relative;
+}
+
+.blog_item h4:after {
+   position: absolute;
+   content: '';
+   background: white;
+   width: 44px;
+   height: 4px;
+   left: 0%;
+   top: 100%;
+}
+
+.blog_item p {
+   color: #fff;
+   font-size: 16px;
+   font-weight: 400;
+   padding: 16px 0px;
+}
+
+.blog_item a {
+   color: #fff;
+   font-weight: 600;
+   font-style: italic;
+   font-size: 18px;
+}
+
+/************************************** 
+     Blog Section Start
+***************************************/
