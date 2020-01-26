@@ -1,33 +1,38 @@
-// Header Slider
 $(document).ready(function () {
-   $('.header_slider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+
+   // Header Slider
+   $('.header_slider').owlCarousel({
+      loop: true,
+      items: 1,
+      nav: true,
+      dots: false,
       autoplay: true,
       autoplaySpeed: 2000,
-      arrows: true,
-      prevArrow: '<button type="button" class="slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
-      nextArrow: '<button type="button" class="slick-next"> <i class="fas fa-chevron-right"></i> </button>',
-      draggable: false,
-      fade: true,
+      animateIn: 'bounceInRight',
+      animateOut: 'bounceOutLeft',
+      navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
    });
-});
 
-//  Testimonial Slider
-$(document).ready(function () {
-   $('.testimonial_area').slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
+
+   //  Testimonial Slider
+   $('.testimonial_area').owlCarousel({
+      loop: true,
       autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false,
+      responsive: {
+         0: {
+            items: 1
+         },
+         600: {
+            items: 2
+         },
+         1000: {
+            items: 4
+         }
+      }
    });
-});
 
-// Services Section Hover Effect
-$(document).ready(function () {
+
+   /* Services Section Hover Effect Start */
    $(".service_icon_1, .service_text_1").hover(function () {
       $(".service_bar_1").css({
          "background-color": "#e74c3c",
@@ -65,11 +70,10 @@ $(document).ready(function () {
          "height": "1px"
       });
    });
+   /* Services Section Hover Effect End */
 
-});
 
-// Recent Works Isotope
-jQuery(document).ready(function () {
+   /* Recent Works Isotope Start */
    var $grid = $('.iso_recent_work').isotope({
       itemSelector: '.recent_work_box',
       percentPosition: true,
@@ -92,65 +96,68 @@ jQuery(document).ready(function () {
       $(this).addClass('recent_work_active').siblings('.recent_work_active').removeClass('recent_work_active');
       e.preventDefault();
    });
-});
+   /* Recent Works Isotope End */
 
 
-// Recent-Works Slider
-jQuery(document).ready(function () {
-   $(".recent_work_slider").slick({
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+   // Recent-Works Slider
+   $(".recent_work_slider").owlCarousel({
+      items: 1,
+      loop: true,
       autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false,
-      fade: true,
+      animateIn: 'animateIn',
+      animateOut: 'bounceOut',
    });
-});
 
 
-// Statistics Counterup
-// Source - https://www.jqueryscript.net/other/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js.html
-jQuery(document).ready(function () {
+   // Statistics Counterup
+   // Source - https://www.jqueryscript.net/other/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js.html
    $(".statistics_countup").countUp({
       'time': 3000,
       'delay': 100,
    });
-});
 
 
-// Pricing Card Slider Wiht Slick Carousel
-jQuery(document).ready(function () {
-   $(".pricing_card_slider").slick({
-      infinite: true,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 1,
+   // Pricing Card Slider With Owl Carousel
+   $(".pricing_card_slider").owlCarousel({
+      loop: true,
       autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false,
-      responsive: [
-         {
-            breakpoint: 1024,
-            settings: {
-               slidesToShow: 3,
-            }
+      nav: false,
+      dots: false,
+      animateIn: 'animateIn',
+      animateOut: 'animateOut',
+      responsive: {
+         0: {
+            items: 1,
          },
-         {
-            breakpoint: 767,
-            settings: {
-               slidesToShow: 1,
-            }
+         600: {
+            items: 2,
          },
-         {
-            breakpoint: 480,
-            settings: {
-               slidesToShow: 1,
-            }
+         1000: {
+            items: 3
          }
-      ]
+      }
    });
+
+
+   //   Integratin Section Owl Carousel
+   $('.integration_item').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      dots: false,
+      responsive: {
+         0: {
+            items: 1
+         },
+         600: {
+            items: 3
+         },
+         1000: {
+            items: 4
+         }
+      }
+   });
+
 });
-
-

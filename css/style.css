@@ -192,7 +192,7 @@ a:focus {
    position: absolute;
    background: #fff;
    width: 51%;
-   height: 170px;
+   height: 280px;
    top: 90%;
    -webkit-transform: skew(0deg, 7deg);
    -ms-transform: skew(0deg, 7deg);
@@ -207,7 +207,7 @@ a:focus {
    position: absolute;
    background: #fff;
    width: 52%;
-   height: 170px;
+   height: 280px;
    left: 49%;
    top: 90%;
    -webkit-transform: skew(0deg, -7deg);
@@ -370,7 +370,9 @@ a:focus {
    transform: translateX(-50%);
 }
 
-.header_slider button.slick-arrow {
+.header_slider.owl-carousel .owl-nav button.owl-next,
+.header_slider.owl-carousel .owl-nav button.owl-prev,
+.header_slider.owl-carousel button.owl-dot {
    z-index: 2;
    font-size: 20px;
    color: #453e39;
@@ -385,17 +387,21 @@ a:focus {
    transition: .2s;
 }
 
-.header_slider button.slick-arrow:focus {
+.header_slider.owl-carousel .owl-nav button.owl-next:hover,
+.header_slider.owl-carousel .owl-nav button.owl-prev:hover,
+.header_slider.owl-carousel button.owl-dot:hover {
    color: #fff;
    background: #E74C3C;
 }
 
-.header_slider button.slick-arrow:hover {
+.header_slider.owl-carousel .owl-nav button.owl-next:focus,
+.header_slider.owl-carousel .owl-nav button.owl-prev:focus,
+.header_slider.owl-carousel button.owl-dot:focus {
    color: #fff;
    background: #E74C3C;
 }
 
-.header_slider button.slick-prev.slick-arrow {
+.header_slider .owl-nav button.owl-prev {
    position: absolute;
    top: 50%;
    left: 3%;
@@ -404,7 +410,7 @@ a:focus {
    transform: translateY(-50%);
 }
 
-.header_slider button.slick-next.slick-arrow {
+.header_slider .owl-nav button.owl-next {
    position: absolute;
    right: 3%;
    top: 50%;
@@ -424,6 +430,11 @@ a:focus {
 .testimonial_area {
    padding-top: 90px;
    padding-bottom: 110px;
+   margin: 0 auto
+}
+
+.testimonial_content {
+   padding-top: 15px;
 }
 
 .testimonial_icon {
@@ -986,6 +997,15 @@ a.history_btn:hover {
    padding: 80px 60px 50px 60px;
 }
 
+.owl-carousel .owl-item .case_study_text span img {
+   width: auto;
+}
+
+.recent_work_slider.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+   background: #E74C3C;
+}
+
 .case_study_text span {
    width: 127px;
    height: 127px;
@@ -1202,8 +1222,12 @@ a.pricing_btn,
    transition: .3s;
 }
 
-.pricing_card_slider.slick-initialized.slick-slider .slick-slide:focus {
-   outline: none;
+.pricing_card_slider.owl-carousel.owl-drag {
+   margin: 0 auto;
+}
+
+.pricing_tablle {
+   margin: 15px;
 }
 
 .pricing_card_header {
@@ -1507,11 +1531,20 @@ a.pricing_btn {
    box-shadow: 0px 1px 8px 2px #ddd;
 }
 
+.owl-carousel .owl-item .integration_img img {
+   width: auto;
+}
+
 .integration_img:last-child {
    margin-right: 0px;
 }
 
-.integration_item:nth-child(2) .integration_img:nth-child(2) {
+.integration_item .owl-item {
+   display: flex;
+   justify-content: center;
+}
+
+.integration_img.integration_red_bg {
    background: #E74E3E;
 }
 

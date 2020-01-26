@@ -17,16 +17,18 @@
    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
    <!-- Font Awesome CSS Link -->
    <link rel="stylesheet" href="css/all.min.css">
-   
+
+   <link rel="stylesheet" href="css/flexslider.css">
    <link rel="stylesheet" href="css/slick.css">
-   <!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
-   <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
    <!-- Bootstrap CSS Link -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <!-- Bootstrap CSS CDN Link -->
    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
+   <link rel="stylesheet" href="css/animate.min.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -61,7 +63,7 @@
 
    <!-- Header Section Start -->
    <section class="custom_width">
-      <div class="header_slider">
+      <div class="header_slider owl-carousel owl-theme">
          <div class="single_slide_item header_bg_1">
             <div class="container-fluid">
                <div class="row">
@@ -263,8 +265,8 @@
    <!-- Testimonail Sart -->
    <section class="custom_width">
       <div class="container">
-         <div class="row text-center testimonial_area">
-            <div class="col-md-3">
+         <div class="row text-center testimonial_area owl-carousel owl-theme">
+            <div class="col-md-33">
                <div class="testimonial_content">
                   <div class="testimonial_icon">
                      <span><i class="fas fa-glasses"></i></span>
@@ -275,7 +277,7 @@
                      industry.</p>
                </div><!-- testimonial_content / -->
             </div><!-- col / -->
-            <div class="col-md-3">
+            <div class="col-md-33">
                <div class="testimonial_content">
                   <div class="testimonial_icon">
                      <span><i class="far fa-heart"></i></span>
@@ -286,7 +288,7 @@
                      industry.</p>
                </div><!-- testimonial_content / -->
             </div><!-- col / -->
-            <div class="col-md-3">
+            <div class="col-md-33">
                <div class="testimonial_content">
                   <div class="testimonial_icon">
                      <span><i class="far fa-lightbulb"></i></span>
@@ -297,23 +299,12 @@
                      industry.</p>
                </div><!-- testimonial_content / -->
             </div><!-- col / -->
-            <div class="col-md-3">
+            <div class="col-md-33">
                <div class="testimonial_content">
                   <div class="testimonial_icon">
                      <span><i class="far fa-comment-alt"></i></span>
                   </div>
                   <h4>FREE SUPPORT</h4>
-                  <div class="border_bar"></div>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the
-                     industry.</p>
-               </div><!-- testimonial_content / -->
-            </div><!-- col / -->
-            <div class="col-md-3">
-               <div class="testimonial_content">
-                  <div class="testimonial_icon">
-                     <span><i class="fas fa-glasses"></i></span>
-                  </div>
-                  <h4>SLEEK DESIGN</h4>
                   <div class="border_bar"></div>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the
                      industry.</p>
@@ -558,7 +549,7 @@
          </div>
 
          <div class="row">
-            <div class="col-md-7  text-center recent_work_slider">
+            <div class="col-md-7  text-center recent_work_slider owl-carousel owl-theme">
                <div class="case_study_content">
                   <div class="case_sutyd_tablecell">
                      <div class="case_study_text">
@@ -573,7 +564,20 @@
                            Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.
                         </p>
 
-                        <a href="#" class="case_study_btn">Read More</a>
+                        <a href="#multiCollapseExample1" class="case_study_btn" data-toggle="collapse" 
+                           role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Read More</a>
+
+                        <div class="row">
+                           <div class="col">
+                              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                 <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident.
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -623,7 +627,7 @@
    </section><!-- Case Study Section End -->
 
    <!-- Statistics Section Start -->
-   <section class=" custom_width statistics_bg defualt_padding">
+   <section class="statistics_bg defualt_padding custom_width">
       <div class="container">
          <div class="statistics">
             <div class="row text-center">
@@ -669,7 +673,7 @@
 
 
    <!-- Our Pricing Section Start -->
-   <section class="custom_width defualt_padding">
+   <section class="defualt_padding custom_width">
       <div class="container">
          <div class="row text-center">
             <div class="col-xl-6 offset-md-3">
@@ -687,8 +691,8 @@
             </div>
          </div>
 
-         <div class="row text-center pricing_card_slider">
-            <div class="col-xl-4 text-center">
+         <div class="row text-center pricing_card_slider owl-carousel owl-theme">
+            <div class="pricing_tablle text-center">
                <div class="pricing_card">
                   <div class="pricing_card_header">
                      <h2>STARTER</h2>
@@ -716,8 +720,9 @@
                      <a href="#" class="pricing_btn case_study_btn">choose plan</a>
                   </div>
                </div>
-            </div><!-- col / -->
-            <div class="col-xl-4 text-center">
+            </div><!-- pricing_tablle / -->
+
+            <div class="pricing_tablle text-center">
                <div class="pricing_card card_2">
                   <div class="pricing_card_header">
                      <h2>PREMIUM</h2>
@@ -745,8 +750,9 @@
                      <a href="#" class="pricing_btn case_study_btn">choose plan</a>
                   </div>
                </div>
-            </div><!-- col / -->
-            <div class="col-xl-4 text-center">
+            </div><!-- pricing_tablle / -->
+
+            <div class="pricing_tablle text-center">
                <div class="pricing_card">
                   <div class="pricing_card_header">
                      <h2>BUSINESS</h2>
@@ -774,94 +780,7 @@
                      <a href="#" class="pricing_btn case_study_btn">choose plan</a>
                   </div>
                </div>
-            </div><!-- col / -->
-            <div class="col-xl-4 text-center">
-               <div class="pricing_card">
-                  <div class="pricing_card_header">
-                     <h2>STARTER</h2>
-
-                     <div class="price">
-                        <div class="price_transparent_bg"></div>
-                        <div class="price_bg">
-                           <div class="price_bg_tablecell">
-                              <h4>$19</h4>
-                              <p>per month</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="pricng_body">
-                     <a href="#">Competition Analysis Methods</a>
-                     <br />
-                     <a href="#">All Ranked URLs</a>
-                     <br />
-                     <a href="#">International Support System</a>
-                     <br />
-                     <a href="#">Social Media Tracking</a>
-                     <br />
-                     <a href="#" class="pricing_btn case_study_btn">choose plan</a>
-                  </div>
-               </div>
-            </div><!-- col / -->
-            <div class="col-xl-4 text-center">
-               <div class="pricing_card card_2">
-                  <div class="pricing_card_header">
-                     <h2>PREMIUM</h2>
-
-                     <div class="price">
-                        <div class="price_transparent_bg"></div>
-                        <div class="price_bg">
-                           <div class="price_bg_tablecell">
-                              <h4>$39</h4>
-                              <p>per month</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="pricng_body">
-                     <a href="#">Competition Analysis Methods</a>
-                     <br />
-                     <a href="#">All Ranked URLs</a>
-                     <br />
-                     <a href="#">International Support System</a>
-                     <br />
-                     <a href="#">Social Media Tracking</a>
-                     <br />
-                     <a href="#" class="pricing_btn case_study_btn">choose plan</a>
-                  </div>
-               </div>
-            </div><!-- col / -->
-            <div class="col-xl-4 text-center">
-               <div class="pricing_card">
-                  <div class="pricing_card_header">
-                     <h2>BUSINESS</h2>
-
-                     <div class="price">
-                        <div class="price_transparent_bg"></div>
-                        <div class="price_bg">
-                           <div class="price_bg_tablecell">
-                              <h4>$99</h4>
-                              <p>per month</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="pricng_body">
-                     <a href="#">Competition Analysis Methods</a>
-                     <br />
-                     <a href="#">All Ranked URLs</a>
-                     <br />
-                     <a href="#">International Support System</a>
-                     <br />
-                     <a href="#">Social Media Tracking</a>
-                     <br />
-                     <a href="#" class="pricing_btn case_study_btn">choose plan</a>
-                  </div>
-               </div>
-            </div><!-- col / -->
+            </div><!-- pricing_tablle / -->
          </div><!-- row / -->
       </div><!-- container / -->
    </section><!-- Our Pricing Section End-->
@@ -930,7 +849,7 @@
 
 
    <!-- Integratin Section Start -->
-   <section class="custom_width integration">
+   <section class="integration custom_width">
       <div class="container">
          <div class="row text-center">
             <div class="col-xl-6 offset-md-3">
@@ -952,7 +871,7 @@
          <div class="row">
             <div class="col-md-12">
                <div class="integration_list">
-                  <div class="integration_item">
+                  <div class="integration_item owl-carousel owl-theme">
                      <div class="integration_img">
                         <img src="images/integration/integration_img_1.png" alt="Integration Image">
                      </div>
@@ -965,15 +884,12 @@
                      <div class="integration_img">
                         <img src="images/integration/integration_img_4.png" alt="Integration Image">
                      </div>
-                     <div class="integration_img">
-                        <img src="images/integration/integration_img_5.png" alt="Integration Image">
-                     </div>
                   </div>
-                  <div class="integration_item">
+                  <div class="integration_item owl-carousel owl-theme">
                      <div class="integration_img">
                         <img src="images/integration/integration_img_6.png" alt="Integration Image">
                      </div>
-                     <div class="integration_img">
+                     <div class="integration_img integration_red_bg">
                         <img src="images/integration/integration_img_7.png" alt="Integration Image">
                      </div>
                      <div class="integration_img">
@@ -981,9 +897,6 @@
                      </div>
                      <div class="integration_img">
                         <img src="images/integration/integration_img_9.png" alt="Integration Image">
-                     </div>
-                     <div class="integration_img">
-                        <img src="images/integration/integration_img_10.png" alt="Integration Image">
                      </div>
                   </div>
                </div>
@@ -1100,9 +1013,6 @@
 
 
 
-
-
-
    <!-- Javascript Links -->
 
    <!-- jQuery Link -->
@@ -1116,7 +1026,10 @@
    <!-- Bootstrap CDN link -->
    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
-   <!-- <script src="js/Necessary-Plugin/Owl-Carousel-Slider/owl.carousel.min.js"></script> -->
+   <!-- Owl Carousel -->
+   <script src="js/owl.carousel.min.js"></script>
+
+   <!-- Slick Carousel -->
    <script src="js/slick.min.js"></script>
 
    <!-- Font Awesome js link -->
