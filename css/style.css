@@ -1883,3 +1883,131 @@ a.pricing_btn {
 /************************************** 
      Contact Section End
 ***************************************/
+
+/************************************** 
+     Action Section Start
+***************************************/
+.footer_action {
+   padding-top: 150px;
+   padding-bottom: 140px;
+   background-image: url(../images/footer_action_bg.jpg);
+   background-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   position: relative;
+   z-index: 1;
+}
+
+.footer_action:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   opacity: .6;
+   z-index: -1;
+   background-color: #000;
+}
+
+.action_content h2,
+.action_content p {
+   color: #fff;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 36px;
+}
+
+.action_content p {
+   font-weight: 400;
+   font-size: 18px;
+}
+
+a.case_study_btn.action_btn {
+   margin-bottom: 0px;
+   margin-top: 70px;
+   -webkit-box-shadow: unset;
+   -moz-box-shadow: unset;
+   box-shadow: unset;
+   padding-left: 50px;
+   padding-right: 50px;
+   font-family: 'Open Sans', sans-serif;
+   letter-spacing: 1px;
+}
+
+/************************************** 
+     Action Section End
+***************************************/
+
+
+/************************************** 
+     Footer Bar Section Start
+***************************************/
+.footer_bar_section {
+   background-color: #202020;
+   padding: 35px 0px;
+   position: relative;
+}
+
+.social_icons a {
+   color: #8b8b8b;
+   font-size: 20px;
+   margin: 10px;
+   -moz-transition: .2s;
+   -webkit-transition: .2s;
+   -o-transition: .2s;
+   transition: .2s;
+}
+
+
+.social_icons a:hover {
+   color: #e74c3c;
+}
+
+.footer_copyright p,
+.footer_copyright a {
+   color: #999;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 600;
+   word-spacing: 1px;
+}
+
+.top_bttom_button {
+   position: absolute;
+   right: 2%;
+   top: -28%;
+   width: 55px;
+   height: 55px;
+   background: #E74C3C;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+   -moz-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -moz-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   z-index: 10;
+   color: #fff;
+   font-size: 20px;
+   border: none;
+}
+
+.top_bttom_button a {
+   color: #fff;
+}
+
+/************************************** 
+     Footer Bar Section End
+***************************************/
