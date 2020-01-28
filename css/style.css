@@ -1166,7 +1166,8 @@ a.history_btn:hover {
    letter-spacing: .5px;
 }
 
-a.case_study_btn {
+a.case_study_btn,
+.case_study_modal_btn {
    padding: 17px 38px;
    background: #E74C3C;
    display: inline-block;
@@ -1184,9 +1185,11 @@ a.case_study_btn {
    box-shadow: 0px 2px 3px 0px #999999;
 }
 
-a.case_study_btn:hover {
+a.case_study_btn:hover,
+.case_study_modal_btn:hover {
    background: #d63e2e;
 }
+
 
 /************************************** 
      Case Study End
@@ -1782,15 +1785,53 @@ a.pricing_btn {
    padding: 16px 0px;
 }
 
-.blog_item a {
+.blog_item .blog_modal {
    color: #fff;
    font-weight: 600;
    font-style: italic;
    font-size: 18px;
+   background: none;
+   border: none;
+}
+
+/* Modal CSS */
+
+
+@media (min-width: 576px) {
+   .blog_modal .modal-dialog {
+      max-width: 900px;
+   }
+}
+
+.blog_modal .modal-body {
+   color: #000;
+   font-style: normal;
+   font-size: 16px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 500;
+   word-spacing: 4px;
+   line-height: 25px;
+}
+
+.blog_modal .modal-header h5 {
+   text-align: center;
+   color: #222;
+   font-style: normal;
+}
+
+.blog_modal .modal-header {
+   display: unset;
+}
+
+.blog_modal button.close {
+   position: absolute;
+   right: 5%;
+   top: 7%;
+   opacity: 1;
 }
 
 /************************************** 
-     Blog Section Start
+     Blog Section End
 ***************************************/
 
 
@@ -1946,7 +1987,7 @@ a.case_study_btn.action_btn {
 ***************************************/
 .footer_bar_section {
    background-color: #202020;
-   padding: 35px 0px;
+   padding: 27px 0px;
    position: relative;
 }
 
@@ -1973,7 +2014,7 @@ a.case_study_btn.action_btn {
    word-spacing: 1px;
 }
 
-.top_bttom_button {
+.top_bottom_button {
    position: absolute;
    right: 2%;
    top: -28%;
@@ -1999,13 +2040,20 @@ a.case_study_btn.action_btn {
    -ms-flex-align: center;
    align-items: center;
    z-index: 10;
-   color: #fff;
    font-size: 20px;
    border: none;
 }
 
-.top_bttom_button a {
+a.top_bottom_button {
    color: #fff;
+   -webkit-transition: .2s;
+   -moz-transition: .2s;
+   -o-transition: .2s;
+   transition: .2s;
+}
+
+a.top_bottom_button:hover {
+   background-color: #d63e2e;
 }
 
 /************************************** 
