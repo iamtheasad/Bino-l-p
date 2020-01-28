@@ -871,6 +871,10 @@ a.history_btn:hover {
 /************************************** 
      Our Recent Works Start
 ***************************************/
+.recent_work_section {
+   overflow: hidden;
+}
+
 .height_140 {
    padding-top: 140px;
 }
