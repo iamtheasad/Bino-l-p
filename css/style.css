@@ -881,6 +881,7 @@ a.history_btn:hover {
 ***************************************/
 #recent_work_section {
    overflow: hidden;
+   background: #fff;
 }
 
 .height_140 {
