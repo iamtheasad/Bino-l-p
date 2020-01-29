@@ -301,6 +301,14 @@ a:focus {
    align-items: center;
    font-size: 30px;
    color: #E74C3C;
+   -webkit-transition: .2s;
+   -moz-transition: .2s;
+   -o-transition: .2s;
+   transition: .2s;
+}
+
+.header_bottom_icon a:hover {
+   color: #d63e2e;
 }
 
 .header_content {
@@ -424,9 +432,9 @@ a:focus {
    border: none;
    width: 45px;
    height: 45px;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
    -webkit-transition: .2s;
    -o-transition: .2s;
    -moz-transition: .2s;
@@ -871,7 +879,7 @@ a.history_btn:hover {
 /************************************** 
      Our Recent Works Start
 ***************************************/
-.recent_work_section {
+#recent_work_section {
    overflow: hidden;
 }
 
@@ -957,6 +965,7 @@ a.history_btn:hover {
 /* Recent Work Image Start */
 .recent_works {
    text-align: center;
+   overflow: hidden;
 }
 
 .recent_work_box {
@@ -1187,6 +1196,11 @@ a.case_study_btn,
    -webkit-box-shadow: 0px 2px 3px 0px #999999;
    -moz-box-shadow: 0px 2px 3px 0px #999999;
    box-shadow: 0px 2px 3px 0px #999999;
+   border: none;
+   -webkit-transition: .2s;
+   -moz-transition: .2s;
+   -o-transition: .2s;
+   transition: .2s;
 }
 
 a.case_study_btn:hover,
@@ -1753,7 +1767,7 @@ a.pricing_btn {
 }
 
 .blog_list:last-child .blog_item_text:after {
-   left: 95%;
+   left: 94%;
 }
 
 .blog_item h6 {
@@ -1991,14 +2005,13 @@ a.case_study_btn.action_btn {
 ***************************************/
 .footer_bar_section {
    background-color: #202020;
-   padding: 27px 0px;
-   position: relative;
+   padding: 25px 0px;
 }
 
 .social_icons a {
    color: #8b8b8b;
    font-size: 20px;
-   margin: 10px;
+   padding: 10px;
    -moz-transition: .2s;
    -webkit-transition: .2s;
    -o-transition: .2s;
@@ -2019,9 +2032,9 @@ a.case_study_btn.action_btn {
 }
 
 .top_bottom_button {
-   position: absolute;
+   position: fixed;
    right: 2%;
-   top: -28%;
+   bottom: 9%;
    width: 55px;
    height: 55px;
    background: #E74C3C;
@@ -2046,17 +2059,15 @@ a.case_study_btn.action_btn {
    z-index: 10;
    font-size: 20px;
    border: none;
-}
-
-a.top_bottom_button {
    color: #fff;
    -webkit-transition: .2s;
    -moz-transition: .2s;
    -o-transition: .2s;
    transition: .2s;
+   opacity: 0;
 }
 
-a.top_bottom_button:hover {
+.top_bottom_button:hover {
    background-color: #d63e2e;
 }
 
