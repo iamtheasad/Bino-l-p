@@ -491,6 +491,10 @@ a:focus {
    margin: 0 auto
 }
 
+.col-md-33 {
+   float: left;
+}
+
 .testimonial_content {
    padding-top: 15px;
 }
@@ -967,6 +971,7 @@ a.history_btn:hover {
 .iso_recent_work {
    display: block;
 }
+
 .recent_works {
    display: flex;
 }
