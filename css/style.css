@@ -969,16 +969,16 @@ a.history_btn:hover {
 
 /* Recent Work Image Start */
 .iso_recent_work {
-    width: 100%;
+   min-height: 675px;
+   background: rgb(45, 171, 175);
 }
 
 .recent_works {
    display: flex;
-   max-height: 480px;
 }
 
 .recent_work_box {
-   width: 25%;
+   max-width: 25%;
 }
 
 .recent_work_box:hover .recent_workd_sample_text {
