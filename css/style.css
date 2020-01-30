@@ -964,6 +964,9 @@ a.history_btn:hover {
 /* Recent Works Menu End */
 
 /* Recent Work Image Start */
+.iso_recent_work {
+   display: block;
+}
 .recent_works {
    display: flex;
 }
