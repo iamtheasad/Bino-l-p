@@ -196,6 +196,7 @@
          return false;
 
       }); // click() scroll top end
+
       /* Scroll to Top Button End */
 
    }); // ready() function end

@@ -967,6 +967,7 @@ a.history_btn:hover {
 .recent_works {
    text-align: center;
    overflow: hidden;
+   background: #fff;
 }
 
 .recent_work_box {
