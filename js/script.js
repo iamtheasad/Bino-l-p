@@ -192,7 +192,7 @@
       $(topBottomButton).on('click', function () {
          $('html, body').animate({
             scrollTop: 0
-         }, 5000);
+         }, 2000);
          return false;
 
       }); // click() scroll top end

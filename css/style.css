@@ -969,7 +969,7 @@ a.history_btn:hover {
 
 /* Recent Work Image Start */
 .iso_recent_work {
-   display: block;
+    width: 100%;
 }
 
 .recent_works {
