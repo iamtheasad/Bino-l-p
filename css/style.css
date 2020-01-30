@@ -974,7 +974,7 @@ a.history_btn:hover {
 
 .recent_works {
    display: flex;
-   height: 480px;
+   max-height: 480px;
 }
 
 .recent_work_box {
