@@ -964,12 +964,6 @@ a.history_btn:hover {
 /* Recent Works Menu End */
 
 /* Recent Work Image Start */
-.recent_works {
-   text-align: center;
-   overflow: hidden;
-   background: #fff;
-}
-
 .recent_work_box {
    width: 25%;
    float: left;
