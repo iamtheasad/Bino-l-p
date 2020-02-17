@@ -195,6 +195,14 @@
         font-size: 12px;
         padding: 15px 20px;
     }
+
+    .footer_copyright p {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 
 /* Tablet & Mobile Layout: 0px-991px End */
