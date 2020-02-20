@@ -1,96 +1,99 @@
 (function iamScript() {
    "use strict";
 
+   $(document).ready(function () {
 
-   /* Bootstrap Menu Hover Added */
-   $('.menu ul li.dropdown').hover(function () {
-      $(this).find('.dropdown-menu').stop(true, true).delay(.35).fadeIn(500);
-   }, function () {
-      $(this).find('.dropdown-menu').stop(true, true).delay(.35).fadeOut(500);
-   });
-   /* Header Reponsive Menu Start*/
+      
+      /* Bootstrap Menu Hover Start */
+
+      $('.menu ul li.dropdown').hover(function () {
+         $(this).find('.dropdown-menu').stop(true, true).delay(.35).fadeIn(500);
+      }, function () {
+         $(this).find('.dropdown-menu').stop(true, true).delay(.35).fadeOut(500);
+      });
+      /* Bootstrap Menu Hover -/ */
 
 
-   // back to top 
-   $('.logo').on('click', function (e) {
-      e.preventDefault();
-      $('.nav-toggle').removeClass('open');
-      $('.menu-left').removeClass('collapse');
-      $('html, body').animate({
-         scrollTop: 0
-      }, 750, 'easeInOutQuad')
-   });
+      /* Header Reponsive Menu Start */
 
-   // smooth scroll between sections
-   $('a[href^="#"]').on('click', function (event) {
-
-      var $target = $(this.getAttribute('href'));
-
-      if ($target.length) {
-         event.preventDefault();
-         $('html, body').stop().animate({
-            scrollTop: $target.offset().top
-         }, 750, 'easeInOutQuad');
-      }
-   });
-
-   // TOGGLE HAMBURGER & COLLAPSE NAV
-   $('.nav-toggle').on('click', function () {
-      $(this).toggleClass('open');
-      $('.menu-left').toggleClass('collapse');
-   });
-   // REMOVE X & COLLAPSE NAV ON ON CLICK
-   $('.menu-left a').on('click', function () {
-      $('.nav-toggle').removeClass('open');
-      $('.menu-left').removeClass('collapse');
-   });
-
-   // SHOW/HIDE NAV
-
-   // Hide Header on on scroll down
-   var didScroll;
-   var lastScrollTop = 0;
-   var delta = 5;
-   var navbarHeight = $('header').outerHeight();
-
-   $(window).scroll(function (event) {
-      didScroll = true;
-   });
-
-   setInterval(function () {
-      if (didScroll) {
-         hasScrolled();
-         didScroll = false;
-      }
-   }, 250);
-
-   function hasScrolled() {
-      var st = $(this).scrollTop();
-
-      // Make sure they scroll more than delta
-      if (Math.abs(lastScrollTop - st) <= delta)
-         return;
-
-      // If they scrolled down and are past the navbar, add class .nav-up.
-      // This is necessary so you never see what is "behind" the navbar.
-      if (st > lastScrollTop && st > navbarHeight) {
-         // Scroll Down
-         $('header').removeClass('show-nav').addClass('hide-nav');
+      // back to top 
+      $('.logo').on('click', function (e) {
+         e.preventDefault();
          $('.nav-toggle').removeClass('open');
          $('.menu-left').removeClass('collapse');
-      } else {
-         // Scroll Up
-         if (st + $(window).height() < $(document).height()) {
-            $('header').removeClass('hide-nav').addClass('show-nav');
+         $('html, body').animate({
+            scrollTop: 0
+         }, 750, 'easeInOutQuad')
+      });
+
+      // smooth scroll between sections
+      $('a[href^="#"]').on('click', function (event) {
+
+         var $target = $(this.getAttribute('href'));
+
+         if ($target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+               scrollTop: $target.offset().top
+            }, 750, 'easeInOutQuad');
          }
+      });
+
+      // TOGGLE HAMBURGER & COLLAPSE NAV
+      $('.nav-toggle').on('click', function () {
+         $(this).toggleClass('open');
+         $('.menu-left').toggleClass('collapse');
+      });
+      // REMOVE X & COLLAPSE NAV ON ON CLICK
+      $('.menu-left a').on('click', function () {
+         $('.nav-toggle').removeClass('open');
+         $('.menu-left').removeClass('collapse');
+      });
+
+      // SHOW/HIDE NAV
+
+      // Hide Header on on scroll down
+      var didScroll;
+      var lastScrollTop = 0;
+      var delta = 5;
+      var navbarHeight = $('header').outerHeight();
+
+      $(window).scroll(function (event) {
+         didScroll = true;
+      });
+
+      setInterval(function () {
+         if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+         }
+      }, 250);
+
+      function hasScrolled() {
+         var st = $(this).scrollTop();
+
+         // Make sure they scroll more than delta
+         if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+         // If they scrolled down and are past the navbar, add class .nav-up.
+         // This is necessary so you never see what is "behind" the navbar.
+         if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('header').removeClass('show-nav').addClass('hide-nav');
+            $('.nav-toggle').removeClass('open');
+            $('.menu-left').removeClass('collapse');
+         } else {
+            // Scroll Up
+            if (st + $(window).height() < $(document).height()) {
+               $('header').removeClass('hide-nav').addClass('show-nav');
+            }
+         }
+
+         lastScrollTop = st;
       }
+      /* Header Reponsive Menu -/ */
 
-      lastScrollTop = st;
-   }
-   /* Header Reponsive Menu End */
-
-
-   $(document).ready(function () {
 
       // Header Slider
       $('.header_slider').owlCarousel({
@@ -162,7 +165,7 @@
             "height": "1px"
          });
       });
-      /* Services Section Hover Effect End */
+      /* Services Section Hover Effect -/ */
 
 
       /* Recent Works Isotope Start */
@@ -187,7 +190,7 @@
          $(this).addClass('recent_work_active').siblings('.recent_work_active').removeClass('recent_work_active');
          e.preventDefault();
       });
-      /* Recent Works Isotope End */
+      /* Recent Works Isotope -/ */
 
 
       // Recent-Works Slider
@@ -285,7 +288,7 @@
 
       }); // click() scroll top end
 
-      /* Scroll to Top Button End */
+      /* Scroll to Top Button -/ */
 
    }); // ready() function end
 })(); // "use strict" method end
